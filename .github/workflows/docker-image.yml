@@ -28,9 +28,9 @@ jobs:
       with:
         context: .
         push: true
-        tags: ghcr.io/${{ github.repository }}/intro-to-docker:latest
+        tags: ghcr.io/langahoohlo/intro-to-docker:latest
 
     - name: Verify image
       run: |
         echo "Running docker run..."
-        docker run ghcr.io/${{ github.repository }}/intro-to-docker:latest cat /app/config.txt
+        docker run ghcr.io/langahoohlo/intro-to-docker:latest cat /app/config.txt
